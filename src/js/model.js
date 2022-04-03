@@ -139,7 +139,6 @@ const persistShoppingList = function () {
 };
 
 export const addToShoppingList = function () {
-  console.log(state.recipe.ingredients);
   state.recipe.ingredients.forEach(ing => addItems(ing));
   persistShoppingList();
 };
